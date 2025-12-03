@@ -2,14 +2,14 @@ pipeline {
     agent any
 
     tools {
-        maven 'MAVEN_HOME'
+        maven 'MAVEN_HOME' // make sure MAVEN_HOME is configured in Jenkins
     }
 
     stages {
         stage('Checkout') {
             steps {
                 echo 'Cloning repository...'
-                git 'https://github.com/tanvirupesh7/dev_2.git'
+                git branch: 'main', url: 'https://github.com/tanvirupesh7/dev_2.git'
             }
         }
 
