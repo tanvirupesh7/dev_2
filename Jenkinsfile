@@ -9,7 +9,7 @@ pipeline {
         stage('Checkout') {
             steps {
                 echo 'Cloning repository...'
-                git 'https://github.com/yourusername/maven-demo.git'
+                git 'https://github.com/tanvirupesh7/dev_2.git'
             }
         }
 
